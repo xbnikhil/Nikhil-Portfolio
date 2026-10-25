@@ -62,6 +62,33 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Colorful redesign & animations (Universe-inspired)
+
+**Direction**
+- Feedback: avoid the typical portfolio look (no big photo, no "world-class developer" quote). Wanted a colorful, playful, chill "happy place" vibe similar to githubuniverse.com, with nice animated buttons.
+- Note: the reference screenshot couldn't be viewed (model doesn't support image input); button styling is Universe-inspired and can be matched exactly once described.
+
+**Changed**
+- Extracted the real GitHub Universe palette from their CSS: cream canvas (`#f7f8f2`), neon lime (`#5fed83`), deep green (`#08872b`), plus purple, orange, yellow, pink, and blue accents.
+- Added display font **Bricolage Grotesque** + **Inter** (Google Fonts) for a friendlier personality.
+- Rebuilt `src/index.css` as a full design system:
+  - Pill buttons with ink borders, hard offset shadows, tilt/lift on hover, and arrows that slide.
+  - Sticker-style badges, pastel cards, bold rounded sections with playful shadows.
+  - Animated gradient text (`shimmer`), floating gradient blobs, doodles, spinning sparkles.
+- Hero rework: cursor-follow glow, floating blobs, rotating/bobbing stickers, animated "hey, I'm Nikhil" pill, scroll hint.
+- New components: `Reveal.jsx` (IntersectionObserver scroll animations) and `Marquee.jsx` (infinite scrolling strips).
+- Added page-transition animation + scroll-to-top on route change.
+- Reworked Home, About, Projects, Contact, and 404 pages with playful, honest placeholder copy and colorful page heroes.
+- New gradient favicon; updated `index.html` title, meta description, and font links.
+- Full `prefers-reduced-motion` support so animations can be disabled.
+
+**Pending / TODO**
+- Match the exact button style from the user's screenshot once described.
+- Real content (bio, projects, contact details, socials) still TBD.
+- Keep iterating on animations and colorful design details.
+
+---
+
 <!--
 Template for future entries:
 

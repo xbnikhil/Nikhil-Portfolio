@@ -48,9 +48,9 @@ The site updates automatically within a minute or two. ✅
 
 ```
 src/
-  components/   # Navbar, Footer
+  components/   # Navbar, Footer, Reveal (scroll animations), Marquee
   pages/        # Home, About, Projects, Contact, NotFound
   main.jsx      # App entry (BrowserRouter)
-  App.jsx       # Routes
-  index.css     # Global styles
+  App.jsx       # Routes + page transitions
+  index.css     # Design system, animations, responsive styles
 ```
