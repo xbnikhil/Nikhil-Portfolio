@@ -5,12 +5,10 @@ export default function Projects() {
   return (
     <>
       <section className="page-hero page-hero-violet">
-        <div className="blob blob-purple page-blob" aria-hidden="true" />
-        <div className="blob blob-orange page-blob-two" aria-hidden="true" />
         <div className="container">
           <p className="kicker">projects</p>
           <h1 className="page-title">
-            Projects, <span className="shimmer">soon-ish</span>.
+            Projects, <span className="accent-word">soon-ish</span>.
           </h1>
           <p className="page-sub">
             The shelves are being stocked. Here's a preview of what's coming.

@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from '../components/Marquee'
 import Reveal from '../components/Reveal'
@@ -25,39 +24,9 @@ const vibeCards = [
 ]
 
 export default function Home() {
-  const heroRef = useRef(null)
-
-  function handlePointerMove(event) {
-    const hero = heroRef.current
-    if (!hero) return
-    const rect = hero.getBoundingClientRect()
-    hero.style.setProperty('--mx', `${event.clientX - rect.left}px`)
-    hero.style.setProperty('--my', `${event.clientY - rect.top}px`)
-  }
-
   return (
     <>
-      <section
-        className="hero"
-        ref={heroRef}
-        onPointerMove={handlePointerMove}
-      >
-        <div className="hero-glow" aria-hidden="true" />
-        <div className="blob blob-lime" aria-hidden="true" />
-        <div className="blob blob-purple" aria-hidden="true" />
-        <div className="blob blob-orange" aria-hidden="true" />
-
-        <span className="doodle doodle-star" aria-hidden="true">
-          ✦
-        </span>
-        <span className="doodle doodle-circle" aria-hidden="true" />
-        <span className="doodle doodle-zigzag" aria-hidden="true">
-          ~
-        </span>
-        <span className="doodle doodle-star-two" aria-hidden="true">
-          ✶
-        </span>
-
+      <section className="hero">
         <div className="container hero-inner">
           <p className="hero-pill">
             <span className="hero-pill-dot" aria-hidden="true" />
@@ -67,7 +36,7 @@ export default function Home() {
           <h1 className="hero-title">
             A happy little corner
             <br />
-            of the <span className="shimmer">internet</span>.
+            of the <span className="accent-word">internet</span>.
           </h1>
 
           <p className="hero-sub">
@@ -101,15 +70,14 @@ export default function Home() {
         </a>
       </section>
 
-      <Marquee
-        items={[
-          'under construction',
-          'good vibes only',
-          'projects loading',
-          'stay curious',
-          'made with lime green',
-        ]}
-      />
+      <div className="color-strip" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
 
       <section className="section" id="vibe">
         <div className="container">
@@ -168,7 +136,6 @@ export default function Home() {
       </section>
 
       <Marquee
-        variant="violet"
         items={[
           'coming soon',
           'colorful by design',

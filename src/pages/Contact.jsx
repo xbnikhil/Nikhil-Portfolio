@@ -4,12 +4,10 @@ export default function Contact() {
   return (
     <>
       <section className="page-hero page-hero-peach">
-        <div className="blob blob-orange page-blob" aria-hidden="true" />
-        <div className="blob blob-lime page-blob-two" aria-hidden="true" />
         <div className="container">
           <p className="kicker">contact</p>
           <h1 className="page-title">
-            Say hi, <span className="shimmer">why don't you</span>?
+            Say hi, <span className="accent-word">why don't you</span>?
           </h1>
           <p className="page-sub">
             The door's open. No formalities needed — just drop a line.

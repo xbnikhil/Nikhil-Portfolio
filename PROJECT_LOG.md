@@ -89,6 +89,27 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Flat minimal redesign (no gradients, square buttons)
+
+**Direction**
+- Feedback: the site had too many gradients, and the buttons looked like the WhatsApp website (rounded pill) — not wanted. Requested: 0px button border radius, no gradients anywhere, whole site colorful but minimal.
+
+**Changed**
+- Removed every gradient: no gradient backgrounds, gradient text, glows, or blurs.
+- Buttons rebuilt: `0px` border radius, flat solid or transparent fills, 1px borders, no shadows; hover simply swaps colors (e.g. ink → lime).
+- Simplified the visual language: removed floating blobs, doodles, cursor-follow glow, hard offset shadows, and rotated stickers.
+- Sharp corners across the UI, hairline borders, generous whitespace, flat pastel color blocks.
+- Added a 6-color segmented strip under the hero for color without noise.
+- Reduced to one lime marquee strip; restyled badges/pills/tags as flat squares.
+- Cleaned up unused CSS animations/classes (`shimmer`, `float`, `pulse`, blobs, doodles) and removed the now-unneeded hero decoration JSX.
+- All button styling now uses only `border-radius: 0` (the single radius declaration in the stylesheet).
+
+**Pending / TODO**
+- Confirm the exact button design with the user (screenshots can't be viewed by this model).
+- Real content still TBD.
+
+---
+
 <!--
 Template for future entries:
 

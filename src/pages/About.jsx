@@ -5,12 +5,10 @@ export default function About() {
   return (
     <>
       <section className="page-hero page-hero-lime">
-        <div className="blob blob-lime page-blob" aria-hidden="true" />
-        <div className="blob blob-purple page-blob-two" aria-hidden="true" />
         <div className="container">
           <p className="kicker">about</p>
           <h1 className="page-title">
-            Hi, I'm <span className="shimmer">Nikhil</span>.
+            Hi, I'm <span className="accent-word">Nikhil</span>.
           </h1>
           <p className="page-sub">
             This page is still a blank canvas — but here's the honest version
