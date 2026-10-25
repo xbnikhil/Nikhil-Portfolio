@@ -1,0 +1,80 @@
+# Project Activity Log
+
+All notable activities, decisions, and changes for **Nikhil's Portfolio** are tracked here.
+
+---
+
+## Project Overview
+
+| | |
+|---|---|
+| **Project** | Nikhil's Portfolio website |
+| **Repo** | https://github.com/xbnikhil/Nikhil-Portfolio |
+| **Live site** | https://xbnikhil.github.io/Nikhil-Portfolio/ |
+| **Local folder** | `Desktop/Opencode/Portfolio-Nikhil` |
+| **Tech stack** | React 19 + Vite + React Router |
+| **Hosting** | GitHub Pages (auto-deploy via GitHub Actions) |
+
+---
+
+## Activity Log
+
+### 2026-10-25 — Project kickoff & first deployment
+
+**Planning**
+- Discussed requirements: React portfolio (SPA, no page reloads), design inspired by githubuniverse.com, first version simple, content to be provided later.
+- Chose repo name `Nikhil-Portfolio` under GitHub account `xbnikhil`.
+- Decided on GitHub Pages with automatic deployment on every push to `main`.
+
+**Setup & build**
+- Scaffolded a Vite + React app and moved it to `Desktop/Opencode/Portfolio-Nikhil`.
+- Installed dependencies (`npm install`) and `react-router-dom`.
+- Added `base: '/Nikhil-Portfolio/'` in `vite.config.js` for GitHub Pages project-site paths.
+- Created the app structure:
+  - `src/components/Navbar.jsx` — sticky navbar with active link highlighting + GitHub link
+  - `src/components/Footer.jsx` — footer with nav links and GitHub link
+  - `src/pages/Home.jsx` — hero with headline, description, and CTAs
+  - `src/pages/About.jsx`, `Projects.jsx`, `Contact.jsx` — placeholder pages
+  - `src/pages/NotFound.jsx` — 404 page
+  - `src/App.jsx` — routes; `src/main.jsx` — BrowserRouter entry
+  - `src/index.css` — global styles (GitHub Universe-inspired light theme, mono kickers, responsive layout)
+- Initial design: light theme, big bold hero typography, accent green, rounded buttons, sticky blurred navbar.
+
+**Deployment**
+- Created the GitHub repository `xbnikhil/Nikhil-Portfolio` (public).
+- Added `.github/workflows/deploy.yml` — builds on push to `main` and deploys to GitHub Pages (with `404.html` SPA fallback for deep links).
+- Enabled GitHub Pages with `build_type: workflow`.
+- Pushed `main` and confirmed the first deployment succeeded.
+- Verified live site returns HTTP 200 and SPA deep links (e.g. `/projects`) work.
+- Set repo homepage to the live URL and added topics: `portfolio`, `react`, `vite`, `github-pages`, `react-router`.
+- Cleaned up unused Vite starter assets.
+- Wrote project `README.md` with local dev and deployment instructions.
+
+**Verification**
+- `npm run build` succeeds.
+- GitHub Actions workflow runs completed successfully.
+- Live URL: https://xbnikhil.github.io/Nikhil-Portfolio/
+
+**Pending / TODO**
+- Replace all placeholder content (name, bio, projects, contact email, social links, resume, photos).
+- Replace default favicon with a custom one.
+- Design refinements once real content is available (sections, animations, dark mode toggle, etc.).
+
+---
+
+<!--
+Template for future entries:
+
+### YYYY-MM-DD — Short title
+
+**Changed**
+- ...
+
+**Decisions**
+- ...
+
+**Notes / TODO**
+- ...
+
+Remember to commit and push after updating this log.
+-->

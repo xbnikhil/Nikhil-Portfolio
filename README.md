@@ -4,6 +4,8 @@ My personal portfolio website — built with **React + Vite + React Router**, an
 
 **Live site:** https://xbnikhil.github.io/Nikhil-Portfolio/
 
+> 📓 Project activity and decision history is tracked in [`PROJECT_LOG.md`](./PROJECT_LOG.md).
+
 ## Tech stack
 
 - [React 19](https://react.dev/)
