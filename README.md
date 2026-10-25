@@ -1,16 +1,54 @@
-# React + Vite
+# Nikhil's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal portfolio website — built with **React + Vite + React Router**, and deployed automatically to **GitHub Pages** on every push to `main`.
 
-Currently, two official plugins are available:
+**Live site:** https://xbnikhil.github.io/Nikhil-Portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [React Router](https://reactrouter.com/) (client-side routing, no page reloads)
+- GitHub Actions (build & deploy)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local development
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Production build
+
+```bash
+npm run build    # outputs to dist/
+npm run preview  # preview the production build locally
+```
+
+## Deployment
+
+Every push to `main` triggers the workflow in `.github/workflows/deploy.yml`, which builds the site and deploys it to GitHub Pages.
+
+- **Live URL:** https://xbnikhil.github.io/Nikhil-Portfolio/
+- **Actions:** https://github.com/xbnikhil/Nikhil-Portfolio/actions
+
+### How changes go live
+
+```bash
+git add .
+git commit -m "your message"
+git push
+```
+
+The site updates automatically within a minute or two. ✅
+
+## Project structure
+
+```
+src/
+  components/   # Navbar, Footer
+  pages/        # Home, About, Projects, Contact, NotFound
+  main.jsx      # App entry (BrowserRouter)
+  App.jsx       # Routes
+  index.css     # Global styles
+```
